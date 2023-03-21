@@ -1,0 +1,22 @@
+table, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 400px;
+    text-align: center;
+}
+
+td {
+    padding: 7px;
+}
+
+td[rowspan='6'] {
+    height: 150px;
+}
+
+
+h1 {
+    text-align: center;
+}
