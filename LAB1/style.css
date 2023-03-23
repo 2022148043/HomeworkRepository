@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
 table, td {
     border: 1px solid black;
 }
@@ -12,11 +24,11 @@ td {
     padding: 7px;
 }
 
-td[rowspan='6'] {
-    height: 150px;
-}
-
-
 h1 {
     text-align: center;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 15px;
 }
