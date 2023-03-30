@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>회원가입 - CSI2109 Lab2</title>
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>환영합니다!</h1>
+        <h2>회원가입</h2>
+    </header>
+
+    <nav>
+        <a href="login.html"><button>로그인</button></a>
+    </nav>
+
+    <hr>
+    
+    <main>
+        <form action="#" method="post">
+            
+            <p>
+                이름 : <input type="text" name="nickname" id="" autofocus>
+            </p>
+            <p>
+                이메일 : <input type="email" name="email" id="" placeholder="email@domain.com">
+            </p>
+            <p>
+                성별 :
+                <input type="radio" name="sex" value="male">남
+                <input type="radio" name="sex" value="female">여
+            </p>
+            <p>
+                비밀번호 : <input type="password" name="password" id="" required>
+            </p>
+            <p>
+                비밀번호 확인 : <input type="password" name="pw_confirm" id="" required>
+            </p>
+            <p>
+                나이 : <input type="number" name="age" id="" step="1">
+            </p>
+            <p>
+                전화번호 : <input type="tel" name="phone" id="" autocomplete="on">
+            </p>
+            <p>
+                관심 카테고리 : 
+                <input type="checkbox" name="category" value="appliance">가전
+                <input type="checkbox" name="category" value="fashion">패션
+                <input type="checkbox" name="category" value="household">가정용품
+                <input type="checkbox" name="category" value="office">사무용품
+                <input type="checkbox" name="category" value="food">식품
+                <input type="checkbox" name="category" value="cosmetic">화장품
+                <input type="checkbox" name="category" value="etc">기타
+            </p>
+
+            <input type="submit" value="회원가입">
+        </form>
+    </main>
+</body>
+</html>
