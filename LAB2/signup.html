@@ -16,48 +16,72 @@
 
     <nav>
         <a href="login.html"><button>로그인</button></a>
+        <hr>
     </nav>
 
-    <hr>
     
     <main>
         <form action="#" method="post">
             
             <p>
-                이름 : <input type="text" name="nickname" id="" autofocus>
+                <label for="nickname" class="input_title">이름</label>
+                <input type="text" name="nickname" id="nickname" autofocus>
             </p>
             <p>
-                이메일 : <input type="email" name="email" id="" placeholder="email@domain.com">
+                <label for="email" class="input_title">이메일</label>
+                <input type="email" name="email" id="email" placeholder="email@domain.com">
             </p>
             <p>
-                성별 :
-                <input type="radio" name="sex" value="male">남
-                <input type="radio" name="sex" value="female">여
+                <label class="input_title">성별</label>
+
+                <input type="radio" name="sex" value="male" id="male">
+                <label for="male">남</label>
+
+                <input type="radio" name="sex" value="female" id="female">
+                <label for="female">여</label>
             </p>
             <p>
-                비밀번호 : <input type="password" name="password" id="" required>
+                <label for="password" class="input_title">비밀번호</label>
+                <input type="password" name="password" id="password" required>
             </p>
             <p>
-                비밀번호 확인 : <input type="password" name="pw_confirm" id="" required>
+                <label for="pw_confirm" class="input_title">비밀번호 확인</label>
+                <input type="password" name="pw_confirm" id="pw_confirm" required>
             </p>
             <p>
-                나이 : <input type="number" name="age" id="" step="1">
+                <label for="age" class="input_title">나이</label>
+                <input type="number" name="age" id="age" step="1">
             </p>
             <p>
-                전화번호 : <input type="tel" name="phone" id="" autocomplete="on">
+                <label for="phone" class="input_title">전화번호</label>
+                <input type="tel" name="phone" id="phone" autocomplete="on">
             </p>
             <p>
-                관심 카테고리 : 
-                <input type="checkbox" name="category" value="appliance">가전
-                <input type="checkbox" name="category" value="fashion">패션
-                <input type="checkbox" name="category" value="household">가정용품
-                <input type="checkbox" name="category" value="office">사무용품
-                <input type="checkbox" name="category" value="food">식품
-                <input type="checkbox" name="category" value="cosmetic">화장품
-                <input type="checkbox" name="category" value="etc">기타
+                <label class="input_title">관심 카테고리</label>
+
+                <input type="checkbox" name="category" value="appliance" id="category1">
+                <label for="category1">가전</label>
+
+                <input type="checkbox" name="category" value="fashion" id="category2">
+                <label for="category2">패션</label>
+
+                <input type="checkbox" name="category" value="household" id="category3">
+                <label for="category3">가정용품</label>
+
+                <input type="checkbox" name="category" value="office" id="category4">
+                <label for="category4">사무용품</label>
+
+                <input type="checkbox" name="category" value="food" id="category5">
+                <label for="category5">식품</label>
+
+                <input type="checkbox" name="category" value="cosmetic" id="category6">
+                <label for="category6">화장품</label>
+
+                <input type="checkbox" name="category" value="etc" id="category7">
+                <label for="category7">기타</label>
             </p>
 
-            <input type="submit" value="회원가입">
+            <input type="submit" value="회원가입" id="submit">
         </form>
     </main>
 </body>
