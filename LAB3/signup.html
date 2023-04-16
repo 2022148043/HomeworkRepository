@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>회원가입 - CSI2109 Lab2</title>
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>환영합니다!</h1>
+        <h2>회원가입</h2>
+    </header>
+
+    <nav>
+        <a href="login.html"><button>로그인</button></a>
+        <hr>
+    </nav>
+
+    
+    <main>
+        <form action="#" method="post">
+            <p>
+                <label for="nickname" class="input_title">이름</label>
+                <input type="text" name="nickname" id="nickname" autofocus>
+            </p>
+            <p>
+                <label for="email" class="input_title">이메일</label>
+                <input type="email" name="email" id="email" placeholder="email@domain.com">
+            </p>
+            <p>
+                <label class="input_title">성별</label>
+
+                <input type="radio" name="sex" value="male" id="male">
+                <label for="male">남</label>
+
+                <input type="radio" name="sex" value="female" id="female">
+                <label for="female">여</label>
+            </p>
+            <p>
+                <label for="password" class="input_title">비밀번호</label>
+                <input type="password" name="password" id="password" required>
+            </p>
+            <p>
+                <label for="pw_confirm" class="input_title">비밀번호 확인</label>
+                <input type="password" name="pw_confirm" id="pw_confirm" required>
+            </p>
+            <p>
+                <label for="age" class="input_title">나이</label>
+                <input type="number" name="age" id="age" step="1">
+            </p>
+            <p>
+                <label for="phone" class="input_title">전화번호</label>
+                <input type="tel" name="phone" id="phone" autocomplete="on">
+            </p>
+            <p>
+                <label class="input_title">관심 카테고리</label>
+
+                <input type="checkbox" name="category" value="appliance" id="category1">
+                <label for="category1">가전</label>
+
+                <input type="checkbox" name="category" value="fashion" id="category2">
+                <label for="category2">패션</label>
+
+                <input type="checkbox" name="category" value="household" id="category3">
+                <label for="category3">가정용품</label>
+
+                <input type="checkbox" name="category" value="office" id="category4">
+                <label for="category4">사무용품</label>
+
+                <input type="checkbox" name="category" value="food" id="category5">
+                <label for="category5">식품</label>
+
+                <input type="checkbox" name="category" value="cosmetic" id="category6">
+                <label for="category6">화장품</label>
+
+                <input type="checkbox" name="category" value="etc" id="category7">
+                <label for="category7">기타</label>
+            </p>
+            <input type="submit" value="회원가입" id="submit">
+        </form>
+    </main>
+</body>
+</html>
