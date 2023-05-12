@@ -23,15 +23,28 @@
     <main>
         <aside>
             <h3>Filter</h3>
-            <div>
-
+            <div id="category_search">
+                <h4>Category</h4>
+                <!--
+                <input type="checkbox" name="category" id="category_HTML" value="HTML">
+                <label for="category_HTML">HTML</label>
+                <br>
+                -->
             </div>
             <div>
-                <label for="search">Search</label>
+                <h4>Search</h4>
                 <input type="search" name="search" id="search">
             </div>
             <div>
-
+                <h4>Sort by Price</h4>
+                <input type="radio" name="sort" id="sort_none" checked>
+                <label for="sort_none">None</label>
+                <br>
+                <input type="radio" name="sort" id="sort_asc">
+                <label for="sort_asc">Ascending</label>
+                <br>
+                <input type="radio" name="sort" id="sort_desc">
+                <label for="sort_desc">Descending</label>
             </div>
         </aside>
         <section>

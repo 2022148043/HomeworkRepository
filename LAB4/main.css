@@ -44,7 +44,7 @@ nav a {
 }
 
 aside {
-    flex-basis: 20%;
+    /* flex-basis: 1; */
     border-right: 1px solid gray;
 }
 
@@ -57,7 +57,7 @@ main {
 }
 
 section {
-    flex-basis: 80%;
+    /* flex-basis: 90%; */
 }
 
 .products_row {
@@ -158,6 +158,10 @@ form > p {
 
 input[type="radio"] + label, input[type="checkbox"] + label {
     margin-right: 15px;
+}
+
+#search {
+    width: 150px;
 }
 
 #submit {

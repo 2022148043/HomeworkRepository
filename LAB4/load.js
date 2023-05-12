@@ -1,9 +1,15 @@
 let products
+let result
+let categories
 
 (async () => {
     products = await getProducts()
+    categories = []
 
+    preload(products)
     render(products)
+
+    categoryFilter()
     search()
 })()
 
@@ -11,6 +17,33 @@ async function getProducts() {
     let response = await fetch('./product.json')
 
     return response.json()
+}
+
+function preload(products) {
+    result = products
+    let category_search = document.getElementById('category_search')
+
+    for (let product of products) {
+        if (!categories.includes(product.category)) {
+            let checkbox = document.createElement('input')
+            checkbox.type = 'checkbox'
+            checkbox.name = 'category'
+            checkbox.class = 'category'
+            checkbox.id = 'category_' + product.category
+            checkbox.checked = true
+            checkbox.value = product.category
+            
+            let label = document.createElement('label')
+            label.setAttribute('for', checkbox.id)
+            label.innerText = ' ' + product.category
+
+            category_search.appendChild(checkbox)
+            category_search.appendChild(label)
+            category_search.appendChild(document.createElement('br'))
+
+            categories.push(product.category)
+        }
+    }
 }
 
 function render(products) {
@@ -51,11 +84,36 @@ function render(products) {
         book.classList.add('book_title')
 
         let title = document.createElement('span')
-        title.innerText = product.name
+        title.innerText = product.name + '\n\n' + '$' + product.price.toFixed(2)
 
         figure.appendChild(img)
-        figure.appendChild(book).appendChild(title)
+        figure.appendChild(book)
+        book.appendChild(title)
         list.appendChild(figure)
+    }
+}
+
+function categoryFilter() {
+    let checkboxes = document.getElementsByName('category')
+    console.log(products)
+    
+    for (let category of checkboxes) {
+        
+        category.addEventListener('change', (event) => {
+            let input = document.querySelector('input#search')
+            input.value = ''
+
+            if (event.target.checked) {
+                let filtered = products.filter(product => product.category == event.target.value)
+                
+                result.push(...filtered)
+            } else {
+                result = result.filter(product => product.category != event.target.value)
+            }
+
+            console.log(result)
+            render(result)
+        })
     }
 }
 
@@ -63,11 +121,10 @@ function search() {
     let element = document.querySelector('input#search')
 
     element.addEventListener('input', (event) => {
-        result = products.filter(product => {
+        filtered = result.filter(product => {
             return product.name.toUpperCase().includes(element.value.toUpperCase())
         })
 
-        console.log(result)
-        render(result)
+        render(filtered)
     })
 }
