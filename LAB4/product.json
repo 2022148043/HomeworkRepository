@@ -1,0 +1,156 @@
+[
+    {
+        "id": 1,
+        "name": "HTML5 Cookbook",
+        "image": "html5_cookbook_cover.jpg",
+        "category": "HTML",
+        "author": "Christopher Schmitt, Kyle Simpson",
+        "ISBN": 9781449396794,
+        "publisher": "O'Reilly Media",
+        "released": "201111",
+        "price": 21.50
+    },
+    {
+        "id": 2,
+        "name": "HTML5: The Missing Manual",
+        "image": "html5_the_missing_manual.jpg",
+        "category": "HTML",
+        "author": "Matthew MacDonald",
+        "ISBN": 9781449363260,
+        "publisher": "O'Reilly Media",
+        "released": "201401",
+        "price": 30.00
+    },
+    {
+        "id": 3,
+        "name": "HTML: Basic Fundamental Guide for Beginners",
+        "image": "html_basic_fundamental_guide_for_beginners.jpg",
+        "category": "HTML",
+        "author": "MG Martin",
+        "ISBN": 9781722399702,
+        "publisher": "CreateSpace Independent Publishing Platform",
+        "released": "201807",
+        "price": 17.00
+    },
+    {
+        "id": 4,
+        "name": "CSS Pocket Reference",
+        "image": "css_pocket_reference.jpg",
+        "category": "CSS",
+        "author": "Eric Meyer",
+        "ISBN": 9781492033394,
+        "publisher": "O'Reilly Media",
+        "released": "201805",
+        "price": 10.50
+    },
+    {
+        "id": 5,
+        "name": "CSS3: The Missing Manual",
+        "image": "css3_the_missing_manual.jpg",
+        "category": "CSS",
+        "author": "David Sawyer McFarland",
+        "ISBN": 9781449325947,
+        "publisher": "O'Reilly Media",
+        "released": "201301",
+        "price": 50.00
+    },
+    {
+        "id": 6,
+        "name": "CSS Master",
+        "image": "css_master.jpg",
+        "category": "CSS",
+        "author": "Tiffany Brown",
+        "ISBN": 9781925836424,
+        "publisher": "SitePoint",
+        "released": "202109",
+        "price": 39.55
+    },
+    {
+        "id": 7,
+        "name": "Eloquent Javascript",
+        "image": "eloquent_javascript.jpg",
+        "category": "Javascript",
+        "author": "Marijn Haverbeke",
+        "ISBN": 9781593279509,
+        "publisher": "No Starch Press",
+        "released": "201812",
+        "price": 18.10
+    },
+    {
+        "id": 8,
+        "name": "JavaScript in Easy Steps",
+        "image": "javascript_in_easy_steps.jpg",
+        "category": "Javascript",
+        "author": "Mike McGrath",
+        "ISBN": 9781840788778,
+        "publisher": "In Easy Steps Limited",
+        "released": "202003",
+        "price": 11.70
+    },
+    {
+        "id": 9,
+        "name": "Sams Teach Yourself JavaScript in 24 Hours",
+        "image": "sams_teach_yourself_javascript_in_24_hours.jpg",
+        "category": "Javascript",
+        "author": "Phil Ballard",
+        "ISBN": 9780672338090,
+        "publisher": "Sams Publishing",
+        "released": "201811",
+        "price": 34.99
+    },
+    {
+        "id": 10,
+        "name": "Ajax: The Definitive Guide",
+        "image": "ajax_the_definitive_guide.jpg",
+        "category": "AJAX",
+        "author": "Anthony T. Holdener III",
+        "ISBN": 9780596528386,
+        "publisher": "O'Reilly Media",
+        "released": "200802",
+        "price": 23.31
+    },
+    {
+        "id": 11,
+        "name": "Ajax: The Complete Reference",
+        "image": "ajax_the_complete_reference.jpg",
+        "category": "AJAX",
+        "author": "Thomas Powell",
+        "ISBN": 9780071492164,
+        "publisher": "McGraw Hill",
+        "released": "200803",
+        "price": 38.92
+    },
+    {
+        "id": 12,
+        "name": "Ajax For Dummies",
+        "image": "ajax_for_dummies.jpg",
+        "category": "AJAX",
+        "author": "Steve Holzner",
+        "ISBN": 9780471785972,
+        "publisher": "For Dummies",
+        "released": "200603",
+        "price": 34.99
+    },
+    {
+        "id": 13,
+        "name": "HTML in easy steps",
+        "image": "html_in_easy_steps.jpg",
+        "category": "HTML",
+        "author": "Mike McGrath",
+        "ISBN": 9781840788761,
+        "publisher": "In Easy Steps Limited",
+        "released": 202007,
+        "price": 11.88
+    },
+    {
+        "id": 14,
+        "name": "HTML5 Pocket Reference",
+        "image": "html5_pocket_reference.jpg",
+        "category": "HTML",
+        "author": "Jennifer Robbins",
+        "ISBN": 9781449363352,
+        "publisher": "O'Reilly Media",
+        "released": 201309,
+        "price": 17.27
+    }
+]
