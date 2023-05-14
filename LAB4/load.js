@@ -1,9 +1,12 @@
 let products
 let result
+let sort = 'none'
 let categories
+let categoryFiltered
 
 (async () => {
     products = await getProducts()
+    categoryFiltered = products
     categories = []
 
     preload(products)
@@ -11,6 +14,7 @@ let categories
 
     categoryFilter()
     search()
+    sortByPriceEvent()
 })()
 
 async function getProducts() {
@@ -46,6 +50,7 @@ function preload(products) {
     }
 }
 
+/*
 function render(products) {
     let categories = []
 
@@ -92,6 +97,35 @@ function render(products) {
         list.appendChild(figure)
     }
 }
+*/
+
+function render(products) {
+    let section = document.querySelector('section')
+    section.innerHTML = ''
+
+    let list = document.createElement('div')
+    list.classList.add('products_row')
+    section.appendChild(list)
+
+    for (let product of products) {
+        let figure = document.createElement('figure')
+        let img = document.createElement('img')
+        img.src = 'images/' + product.image
+        img.alt = product.name
+        img.classList.add('cover')
+
+        let book = document.createElement('span')
+        book.classList.add('book_title')
+
+        let title = document.createElement('span')
+        title.innerText = product.name + '\n\n' + '$' + product.price.toFixed(2)
+
+        figure.appendChild(img)
+        figure.appendChild(book)
+        book.appendChild(title)
+        list.appendChild(figure)
+    }
+}
 
 function categoryFilter() {
     let checkboxes = document.getElementsByName('category')
@@ -106,13 +140,16 @@ function categoryFilter() {
             if (event.target.checked) {
                 let filtered = products.filter(product => product.category == event.target.value)
                 
-                result.push(...filtered)
+                categoryFiltered.push(...filtered)
             } else {
-                result = result.filter(product => product.category != event.target.value)
+                categoryFiltered = categoryFiltered.filter(product => product.category != event.target.value)
             }
 
             console.log(result)
-            render(result)
+
+            // categoryFiltered = result
+            sortByPrice()
+            render(categoryFiltered)
         })
     }
 }
@@ -121,10 +158,33 @@ function search() {
     let element = document.querySelector('input#search')
 
     element.addEventListener('input', (event) => {
-        filtered = result.filter(product => {
+        filtered = categoryFiltered.filter(product => {
             return product.name.toUpperCase().includes(element.value.toUpperCase())
         })
 
         render(filtered)
     })
+}
+
+function sortByPriceEvent() {
+    let elements = document.querySelectorAll('input[type="radio"]')
+
+    for (let element of elements) {
+        element.addEventListener('click', (event) => {
+            sort = element.value
+            sortByPrice()
+        })
+    }
+}
+
+function sortByPrice() {
+    if (sort == 'asc') {
+        categoryFiltered = categoryFiltered.sort((a, b) => a.price - b.price)
+    } else if (sort == 'desc') {
+        categoryFiltered = categoryFiltered.sort((a, b) => b.price - a.price)
+    } else {
+        categoryFiltered = categoryFiltered.sort((a, b) => a.id  - b.id)
+    }
+
+    render(categoryFiltered)
 }
