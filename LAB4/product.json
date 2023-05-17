@@ -152,5 +152,115 @@
         "publisher": "O'Reilly Media",
         "released": 201309,
         "price": 17.27
+    },
+    {
+        "id": 15,
+        "name": "Json And Ajax Guide",
+        "image": "json_and_ajax_guide.jpg",
+        "category": "AJAX",
+        "author": "Belle Deitz",
+        "ISBN": 9798366173568,
+        "publisher": "Independently Published",
+        "released": 202211,
+        "price": 12.89
+    },
+    {
+        "id": 16,
+        "name": "Ajax: A Beginner's Guide",
+        "image": "ajax_a_beginner's_guide.jpg",
+        "category": "AJAX",
+        "author": "Steven Holzner",
+        "ISBN": 9790071494298,
+        "publisher": "McGraw Hill",
+        "released": 200809,
+        "price": 8.89
+    },
+    {
+        "id": 17,
+        "name": "Advanced Ajax: Architecture and Best Practices",
+        "image": "advanced_ajax_architecture_and_best_practices.jpg",
+        "category": "AJAX",
+        "author": "Shawn M. Lauriat",
+        "ISBN": 9780131350649,
+        "publisher": "Pearson P T R",
+        "released": 200701,
+        "price": 2.10
+    },
+    {
+        "id": 18,
+        "name": "Learn JavaScript Quickly",
+        "image": "learn_javascript_quickly.jpg",
+        "category": "Javascript",
+        "author": "Code Quickly",
+        "ISBN": 9781951791476,
+        "publisher": "Code Quickly",
+        "released": 202011,
+        "price": 16.89
+    },
+    {
+        "id": 19,
+        "name": "CSS: The Definitive Guide",
+        "image": "css_the_definitive_guide.jpg",
+        "category": "CSS",
+        "author": "Eric Meyer, Estelle Weyl",
+        "ISBN": 9781098117610,
+        "publisher": "O'Reilly Media",
+        "released": 202307,
+        "price": 89.99
+    },
+    {
+        "id": 20,
+        "name": "Learn CSS in One Day and Learn It Well",
+        "image": "learn_css_in_one_day_and_learn_it_well.jpg",
+        "category": "CSS",
+        "author": "Jamie Chan",
+        "ISBN": 9781508917250,
+        "publisher": "LCF Publishing",
+        "released": 201503,
+        "price": 10.99
+    },
+    {
+        "id": 21,
+        "name": "HTML QuickStart Guide: The Simplified Beginner's Guide To HTML",
+        "image": "html_quickstart_guide_the_simplified_beginner's_guide_to_html.jpg",
+        "category": "HTML",
+        "author": "Martin Mihajlov",
+        "ISBN": 9781511617994,
+        "publisher": "ClydeBank Technology",
+        "released": 201504,
+        "price": 5.49
+    },
+    {
+        "id": 22,
+        "name": "HTML Awesomeness Book",
+        "image": "html_awesomeness_book.jpg",
+        "category": "HTML",
+        "author": "Gilad E Tsur Mayer",
+        "ISBN": 9781537054896,
+        "publisher": "Independently Published",
+        "released": 201608,
+        "price": 8.12
+    },
+    {
+        "id": 23,
+        "name": "HTML: Complete Concepts and Techniques",
+        "image": "html_complete_concepts_and_techniques.jpg",
+        "category": "HTML",
+        "author": "Gary B. Shelly, Thomas J. Cashman, Denise M. Woods, William J. Dorin",
+        "ISBN": 9781418859367,
+        "publisher": "Cengage Learning",
+        "released": 200608,
+        "price": 7.44
+    },
+    {
+        "id": 24,
+        "name": "JavaScript from Beginner to Professional",
+        "image": "javascript_from_beginner_to_professional.jpg",
+        "category": "Javascript",
+        "author": "Laurence Lars Svekis, Maaike van Putten, Rob Percival",
+        "ISBN": 9781800562523,
+        "publisher": "Packt Publishing",
+        "released": 202112,
+        "price": 32.96
     }
 ]

@@ -1,3 +1,5 @@
+const additionWhenScroll = 4
+let numOfShow = 16
 let products
 let result
 let sort = 'none'
@@ -10,7 +12,8 @@ let categoryFiltered
     categories = []
 
     preload(products)
-    render(products)
+    render(products, numOfShow)
+    scrollToEnd()
 
     categoryFilter()
     search()
@@ -99,7 +102,7 @@ function render(products) {
 }
 */
 
-function render(products) {
+function render(products, numOfShow) {
     let section = document.querySelector('section')
     section.innerHTML = ''
 
@@ -107,7 +110,7 @@ function render(products) {
     list.classList.add('products_row')
     section.appendChild(list)
 
-    for (let product of products) {
+    for (let product of products.slice(0, numOfShow)) {
         let figure = document.createElement('figure')
         let img = document.createElement('img')
         img.src = 'images/' + product.image
@@ -187,4 +190,16 @@ function sortByPrice() {
     }
 
     render(categoryFiltered)
+}
+
+function scrollToEnd() {
+    window.onscroll = () => {
+        let val = window.scrollY + window.innerHeight - document.body.offsetHeight
+        // console.log(val)
+        if (val == 0) {
+            console.log(true)
+            numOfShow += additionWhenScroll
+            render(result, numOfShow)
+        }
+    }
 }
