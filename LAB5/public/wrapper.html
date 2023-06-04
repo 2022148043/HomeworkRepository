@@ -1,0 +1,41 @@
+<body>
+    <h1>Welcome to Yonsei Bookstore!</h1>
+
+    <nav>
+        <a href="/">메인</a>
+        <a href="/login.html">로그인</a>
+        <a href="/signup.html">회원가입</a>
+    </nav>
+
+    <hr>
+
+    <main>
+        <aside>
+            <h3>Filter</h3>
+            <div id="category_search">
+                <h4>Category</h4>
+
+                <input type="radio" name="category" id="category_HTML" value="HTML">
+                <label for="category_HTML"> HTML</label>
+                <br>
+                <input type="radio" name="category" id="category_CSS" value="CSS">
+                <label for="category_CSS"> CSS</label>
+                <br>
+                <input type="radio" name="category" id="category_Javascript" value="Javascript">
+                <label for="category_Javascript"> Javascript</label>
+                <br>
+                <input type="radio" name="category" id="category_AJAX" value="AJAX">
+                <label for="category_AJAX"> AJAX</label>
+                <br>
+            </div>
+            <div>
+                <h4>Search</h4>
+                <form action="/" method="get">
+                    <input type="search" name="keyword" id="search">
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+        </aside>
+        <section>
+            <div class="products_row">
+                

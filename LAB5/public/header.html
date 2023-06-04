@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yonsei Bookstore</title>
+
+    <link rel="stylesheet" href="/main.css">
+    <!-- <script src="load.js"></script> -->
+
+    <script>
+        window.onload = function() {
+            const category = new URLSearchParams(location.search).get('category')
+            
+            if (category) {
+                let input = document.querySelector(`input[value="${category}"]`)
+                input.checked = true
+            }
+
+            let inputs = document.querySelectorAll('input[type="radio"]')
+
+            for (let input of inputs) {
+                input.addEventListener('click', function() {
+                    location.href = './?category=' + this.value
+                })
+            }
+        }
+    </script>
+</head>
